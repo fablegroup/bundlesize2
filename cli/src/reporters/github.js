@@ -13,6 +13,8 @@ async function report(summary) {
 
   const body = { repo, sha, status, title, text }
 
+  console.log(body)
+
   await fetch(API, {
     method: 'post',
     body: JSON.stringify(body),
